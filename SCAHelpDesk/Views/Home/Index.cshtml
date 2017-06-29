@@ -60,7 +60,12 @@
                 @Html.ValidationMessageFor(model => model.IssueDescription, "", new { @class = "text-danger" })
             </div>
         </div>
-
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <div class="g-recaptcha" data-sitekey="6Ld_sCUUAAAAAAcAGzD17yFJXhDdS1bqkOLXy0dc"></div>
+            </div>
+        </div>
+    
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input type="submit" value="Submit support ticket" class="btn btn-success" />
@@ -72,3 +77,4 @@
 <script src="~/Scripts/jquery-1.10.2.min.js"></script>
 <script src="~/Scripts/jquery.validate.min.js"></script>
 <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
